@@ -103,7 +103,7 @@ Punto de venta con control de stock para un único PC con Windows, con instalado
   <img src="https://github-readme-stats-seven-pi-94.vercel.app/api?username=checacs&show_icons=true&count_private=true&theme=default&cache_bust=1" />
 </p>
 
-> 
+> Instancia propia desplegada en Vercel (la pública oficial da 503 con frecuencia por sobrecarga). Para que la tarjeta refleje también el trabajo en repos privados, activa **"Include private contributions"** en `Settings → Profile` de GitHub.
 
 ---
 
