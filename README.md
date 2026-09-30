@@ -25,6 +25,11 @@ La mayoría de mis repositorios son **privados** (código de clientes/proyectos 
 
 ---
 
+### 🐾 VetClinic — TFG
+Mi primer proyecto y al que mas cariño le tengo ya que esta desarrollado enteramente por mi con muchisimas horas dedicadas(quebraderos de cabeza y mucha ansiedad hasta conseguir un resultado optimo) y para un sector que me toca muy de cerca.
+
+Suite de tres repos: `apiclinica` (NestJS + MongoDB, JWT + roles Admin/Trabajador/Cliente, módulo de IA con vector store de OpenAI), `clinica_crud` (panel Angular) y `appMovil` (app Ionic/Angular para clientes, con chat IA). Trabajo Fin de Grado — proyecto académico, sin el mismo proceso de specs que los de arriba.
+
 ## 🤖 Cómo trabajo con IA
 
 Los proyectos marcados con 🤖 están construidos con IA como colaborador de desarrollo, no como autocompletado. El proceso es siempre el mismo, y es verificable en el propio repo:
@@ -108,8 +113,6 @@ Punto de venta con control de stock para un único PC con Windows, con instalado
 - Suite de tests seria: 234 unitarios (API) + 68 (web) + 41 de integración contra Mongo real
 - Preparado de cara a la normativa **Veri\*Factu** (obligatoria en España en 2027)
 
-### 🐾 VetClinic — TFG
-Suite de tres repos: `apiclinica` (NestJS + MongoDB, JWT + roles Admin/Trabajador/Cliente, módulo de IA con vector store de OpenAI), `clinica_crud` (panel Angular) y `appMovil` (app Ionic/Angular para clientes, con chat IA). Trabajo Fin de Grado — proyecto académico, sin el mismo proceso de specs que los de arriba.
 
 ---
 
