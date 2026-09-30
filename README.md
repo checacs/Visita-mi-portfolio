@@ -98,6 +98,7 @@ Punto de venta con control de stock para un único PC con Windows, con instalado
 - Suite de tests seria: 234 unitarios (API) + 68 (web) + 41 de integración contra Mongo real
 - Preparado de cara a la normativa **Veri\*Factu** (obligatoria en España en 2027)
 
+Tambien se encuentra desplegado en mi homelab.
 ---
 
 ## 📊 Actividad
