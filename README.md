@@ -70,6 +70,9 @@ App Android (Expo/React Native) para que el equipo comercial consulte leads, cli
 - Permisos por rol: comercial/admin entran, contabilidad/logística reciben 403 aunque la contraseña sea correcta
 - Decisión documentada y deliberada de **no usar librería de navegación** (tres pestañas con `useState`) para no arriesgar la compilación con el SDK de Expo
 
+### 🖥️ Infraestructura propia: todo el ecosistema corre en mi homelab
+El CRM/ERP interno y el RAG de Facturas no están en un PaaS de terceros: viven en un servidor propio (Ubuntu Server) que monté y administro yo — Docker + **Coolify** como PaaS autogestionado (alternativa casera a Render/Vercel) y **Cloudflare Tunnel** para exponerlos por HTTPS sin abrir ni un puerto del router. La web pública se queda deliberadamente en Vercel para no arriesgar la disponibilidad de lo que ve un cliente — control propio donde aporta valor, gestionado donde importa la fiabilidad.
+
 ---
 
 
@@ -83,7 +86,7 @@ Banco de pruebas del módulo de IA documental de ChekNologies: sube facturas, la
 - **Mapa vectorial** de las facturas con UMAP, para inspeccionar visualmente cómo se agrupan
 - **Seguridad real, no de fachada:** cookie de sesión firmada (`HttpOnly`, `Secure`, `SameSite=Strict`) que caduca a los 5 min de inactividad, verificada en **cada ruta de datos** de la API (no solo en la página de login) más una clave interna que añade nginx en el proxy web→api; límite de 10 intentos de login por minuto
 - **75 tests** (pytest) con un cliente de OpenAI falso, sin red ni coste real en los tests
-- Desplegado en el homelab propio vía Docker Compose + Coolify + Cloudflare Tunnel, integrado con el ERP de ChekNologies (comparte clave de OpenAI)
+- Desplegado en mi homelab (ver más arriba), integrado con el ERP de ChekNologies (comparte clave de OpenAI)
 
 ### 🛒 TPV Tienda 🔒 🤖
 Punto de venta con control de stock para un único PC con Windows, con instalador propio.
