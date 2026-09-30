@@ -72,27 +72,7 @@ App Android (Expo/React Native) para que el equipo comercial consulte leads, cli
 
 ---
 
-## 🎓 TFM, TFG y proyectos personales
 
-### 🧠 CodeConsensus 🔒 🤖
-Herramienta para que varias IAs locales (Ollama, 100% en la máquina, nada sale a la nube) debatan un mismo problema hasta llegar a código consensuado: un **Autor** propone, varios **Revisores** lo critican por severidad y votan, un **Juez** desempata si hace falta, y un sandbox Docker ejecuta tests y linter — el consenso entre IAs nunca vale más que ese resultado objetivo.
-
-- NestJS + TypeScript, **arquitectura hexagonal** real: `domain/` (`Debate`, `Ronda`, `Problema`, `RegladeConsenso`...) sin una sola dependencia de framework, `application/` con los casos de uso y sus puertos (`LlmProvider`, `CodeSandbox`, `DebateRepository`), `infrastructure/` con los adaptadores (Ollama, MongoDB)
-- **TDD estricto de verdad, no de boquilla**: 429 tests (`it()`) repartidos en 20 ficheros — solo el dominio del propio `Debate` tiene 55 tests en 600 líneas — con dobles en memoria (`LlmProvider` falso, repositorio en memoria) para no depender de Ollama ni Mongo reales en los tests
-- Salida estructurada obligatoria (JSON Schema) tanto para el Autor como para los Revisores, validada y con reintento automático si el LLM devuelve algo inválido
-- Máquina de estados de dominio explícita para el debate, con reanudación tras un reinicio del backend (retoma desde la última ronda completa, con tope de reintentos para no entrar en bucle)
-- Spec propia de 5 fases con 34 criterios de aceptación (`CA-1`...`CA-34`); ahora mismo la **Fase 1 (MVP del debate)** está implementada y en desarrollo
-
-### 🎲 D&D con IA Master 🤖 — *Trabajo Fin de Máster*
-Sistema de rol D&D 5e donde una IA (DeepSeek) hace de Dungeon Master, con tiradas de dados deterministas resueltas siempre en servidor (la IA narra, nunca inventa resultados).
-
-- **`API_REST`** — NestJS 11 + MongoDB, Clean Architecture, TDD estricto (dobles/fakes), servidor **MCP propio con 26 herramientas**, síntesis de voz (Qwen3-TTS-Flash)
-- **`dm-engine`** — motor de orquestación en Node/Express que conecta con DeepSeek (compatible con otros LLMs)
-- **`ui-web`** — interfaz web de solo lectura en React 18 + Vite
-- **`mobile-app`** — app en React Native/Expo, la superficie principal de juego
-- 10 documentos de diseño (01–10) cubriendo spec, modelo de datos, arquitectura, MCP, motor de IA, CI/CD y autenticación
-
-Desplegado y funcionando en producción: **[web](https://ui-web-three.vercel.app/login)** · **[API](https://api-dnd5e-dm-ia.onrender.com)** · APK de Android disponible bajo petición.
 
 ### 📄 RAG de Facturas con IA 🔒 🤖
 Banco de pruebas del módulo de IA documental de ChekNologies: sube facturas, las indexa y responde preguntas sobre ellas en lenguaje natural, con un mapa visual de los vectores.
@@ -120,10 +100,10 @@ Punto de venta con control de stock para un único PC con Windows, con instalado
 ## 📊 Actividad
 
 <p align="center">
-  <img src="https://github-readme-stats-seven-pi-94.vercel.app/api?username=checacs&show_icons=true&count_private=true&theme=default" />
+  <img src="https://github-readme-stats-seven-pi-94.vercel.app/api?username=checacs&show_icons=true&count_private=true&theme=default&cache_bust=1" />
 </p>
 
-> Instancia propia desplegada en Vercel (la pública oficial da 503 con frecuencia por sobrecarga). Para que la tarjeta refleje también el trabajo en repos privados, activa **"Include private contributions"** en `Settings → Profile` de GitHub.
+> 
 
 ---
 
