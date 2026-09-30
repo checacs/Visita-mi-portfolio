@@ -90,6 +90,7 @@ Banco de pruebas del módulo de IA documental de ChekNologies: sube facturas, la
 
 ### 🛒 TPV Tienda 🔒 🤖
 Punto de venta con control de stock para un único PC con Windows, con instalador propio.
+Tambien se encuentra desplegado en mi homelab, ya que existen las dos opciones.
 
 - NestJS (API) + web (BFF) sobre **Clean Architecture** (`domain` sin dependencias de framework, `application`, `infrastructure`)
 - MongoDB con transacciones reales (replica set), migraciones versionadas
@@ -98,7 +99,7 @@ Punto de venta con control de stock para un único PC con Windows, con instalado
 - Suite de tests seria: 234 unitarios (API) + 68 (web) + 41 de integración contra Mongo real
 - Preparado de cara a la normativa **Veri\*Factu** (obligatoria en España en 2027)
 
-Tambien se encuentra desplegado en mi homelab.
+
 ---
 
 ## 📊 Actividad
