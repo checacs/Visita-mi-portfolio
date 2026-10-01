@@ -4,6 +4,7 @@
 <p align="center">
   <img src="https://img.shields.io/badge/Angular-DD0031?style=flat&logo=angular&logoColor=white" />
   <img src="https://img.shields.io/badge/NestJS-E0234E?style=flat&logo=nestjs&logoColor=white" />
+  <img src="https://img.shields.io/badge/Ionic-3880FF?style=flat&logo=ionic&logoColor=white" />
   <img src="https://img.shields.io/badge/React-61DAFB?style=flat&logo=react&logoColor=black" />
   <img src="https://img.shields.io/badge/React_Native-20232A?style=flat&logo=react&logoColor=61DAFB" />
   <img src="https://img.shields.io/badge/Next.js-000000?style=flat&logo=next.js&logoColor=white" />
@@ -29,6 +30,18 @@ La mayoría de mis repositorios son **privados** (código de clientes/proyectos 
 Mi primer proyecto y al que mas cariño le tengo ya que esta desarrollado enteramente por mi con muchisimas horas dedicadas(quebraderos de cabeza y mucha ansiedad hasta conseguir un resultado optimo) y para un sector que me toca muy de cerca.
 
 Suite de tres repos: `apiclinica` (NestJS + MongoDB, JWT + roles Admin/Trabajador/Cliente, módulo de IA con vector store de OpenAI), `clinica_crud` (panel Angular) y `appMovil` (app Ionic/Angular para clientes, con chat IA). Trabajo Fin de Grado — proyecto académico, sin el mismo proceso de specs que los de arriba.
+
+---
+
+### 🔫 CS2 Skins — [cs2Project](https://github.com/checacs/cs2Project)
+Proyecto de clase de 2º de DAM, hecho **enteramente a mano, sin IA**: lo usé para aprender Ionic y Angular desde la base, entendiendo cada línea (el código está lleno de mis propios comentarios explicando el porqué de cada paso).
+
+App móvil híbrida (**Ionic 8 + Angular 20 standalone + Capacitor 7**, compilada para Android) para explorar el catálogo de skins de Counter-Strike 2 consumiendo la API pública de ByMykel/CSGO-API.
+
+- Pantalla de inicio con 6 categorías (rifles, pistolas, SMGs, cuchillos, guantes y pesadas) que navegan a una ruta dinámica `/categorias/:type` con lazy loading
+- Listado filtrado por categoría con **scroll infinito** (carga de 20 en 20) y **buscador en tiempo real** por nombre
+- Ficha de detalle en modal (imagen, tipo de arma, StatTrak™) y lista de favoritos
+- Servicios separados para datos (`HttpClient` + RxJS) y notificaciones toast, con tipado completo de la respuesta de la API
 
 ---
 
